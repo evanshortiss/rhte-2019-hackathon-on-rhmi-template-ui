@@ -46,10 +46,10 @@ Install development/build dependencies
 `yarn`
 
 Start the development server
-`yarn start`
+`yarn start:dev`
 
 Run a production build
-`yarn build`
+`MAPS_API_KEY=$YOUR_GMAPS_API_KEY yarn build`
 
 Run the test suite
 `yarn test`
@@ -62,6 +62,14 @@ Run the code formatter
 
 Launch a tool to inspect the bundle size
 `yarn bundle-profile:analyze`
+
+## Deployment
+
+You can deploy this using the Node.js s2i builder. This will invoke the
+`yarn build` script, then use the `server.js` when running on OpenShift.
+
+When performing a build the `MAPS_API_KEY` environment variable needs to
+set in the build container.
 
 ## Configurations
 * [TypeScript Config](./tsconfig.json)

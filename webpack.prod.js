@@ -16,7 +16,7 @@ module.exports = merge(common, {
   plugins: [
     new webpack.EnvironmentPlugin({
       // Inject Google Maps API that's provided at build time
-      // using an environment variable
+      // using an environment variable in the build settings
       MAPS_API_KEY: process.env.MAPS_API_KEY
     }),
     new MiniCssExtractPlugin({
