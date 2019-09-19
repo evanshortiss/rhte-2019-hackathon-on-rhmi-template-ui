@@ -5,7 +5,7 @@ const common = require("./webpack.common.js");
 const { resolve } = require('path');
 const apiMocker = require('mocker-api');
 
-const HOST = process.env.HOST || "localhost";
+const HOST = process.env.HOST || "0.0.0.0";
 const PORT = process.env.PORT || "9000";
 
 module.exports = merge(common, {
