@@ -28,6 +28,7 @@ module.exports = merge(common, {
     compress: true,
     inline: true,
     historyApiFallback: true,
+    disableHostCheck: true,
     hot: true,
     overlay: true,
     open: true
