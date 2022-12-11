@@ -75,7 +75,7 @@
     "@types/googlemaps": "^3.37.5",
     "copy-webpack-plugin": "^5.0.4",
     "env-var": "^5.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "google-map-react": "^1.1.4",
     "morgan": "^1.9.1",
     "react-document-title": "^2.0.3",
